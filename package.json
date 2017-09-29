@@ -1,0 +1,23 @@
+{
+  "name": "rollupjs-starter-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://kokushin@github.com/kokushin/rollupjs-starter-kit.git",
+  "author": "kokushin <mail@kokush.in>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rollup src/js/main.js -o public/js/bundle.js -f iife -m inline -c -w",
+    "build": "NODE_ENV=production rollup src/js/main.js -o dist/js/bundle.min.js -f iife -c"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}
