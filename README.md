@@ -1,5 +1,7 @@
 # rollupjs-starter-kit
 
+Try it!
+
 ## Develop mode
 
 ```shell
