@@ -25,7 +25,7 @@ export default {
     }),
     (process.env.NODE_ENV === 'production' && uglify({
       output: {
-        comments: true
+        comments: /^!/
       }
     })),
   ]
